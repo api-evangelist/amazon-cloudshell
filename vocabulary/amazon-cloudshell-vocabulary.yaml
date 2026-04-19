@@ -1,0 +1,65 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: "Amazon CloudShell"
+  description: "Vocabulary for Amazon CloudShell APIs covering operations, schemas, and capability workflows."
+  created: "2026-04-19"
+  modified: "2026-04-19"
+
+operational:
+  apis:
+    - name: "Amazon CloudShell API"
+      namespace: cloudshell
+      baseUrl: https://cloudshell.us-east-1.amazonaws.com
+      status: active
+
+  resources: []
+  actions:
+    - name: list
+      httpMethod: GET
+      pattern: read
+    - name: create
+      httpMethod: POST
+      pattern: write
+    - name: get
+      httpMethod: GET
+      pattern: read
+    - name: delete
+      httpMethod: DELETE
+      pattern: destructive
+
+  authentication:
+    schemes:
+      - type: AWS Signature Version 4
+        apis: [cloudshell]
+
+capability:
+  workflows:
+    - name: "Cloud Shell Environment Management"
+      file: capabilities/shell-environment.yaml
+      toolCount: 4
+      personas: [Cloud Administrator]
+
+  personas:
+    - id: cloud-administrator
+      name: "Cloud Administrator"
+      workflows: ["Cloud Shell Environment Management"]
+
+  namespaces:
+    - name: cloudshell
+      type: consumed
+      baseUri: https://cloudshell.us-east-1.amazonaws.com
+    - name: cloudshell-workflow-api
+      type: rest-exposed
+      port: 8080
+    - name: cloudshell-workflow-mcp
+      type: mcp-exposed
+      port: 9090
+
+  binds:
+    - name: AWS_ACCESS_KEY_ID
+      workflows: ["Cloud Shell Environment Management"]
+    - name: AWS_SECRET_ACCESS_KEY
+      workflows: ["Cloud Shell Environment Management"]
+
+crossReference: []
