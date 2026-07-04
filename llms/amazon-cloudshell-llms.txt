@@ -1,0 +1,58 @@
+# AWS CloudShell User Guide
+
+> This is official Amazon Web Services (AWS) documentation for AWS CloudShell. AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. You can run AWS CLI commands against AWS services using your preferred shell (Bash, PowerShell, or Z shell). And you can do this without needing to download or install command line tools. This guide explains how to use AWS CloudShell. This documentation is offered for free here as a Kindle book, or you can read it online or in PDF format at https://aws.amazon.com/documentation/cloud9/.
+
+- [What is AWS CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.md)
+- [Getting started](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.md)
+- [AWS CloudShell Concepts](https://docs.aws.amazon.com/cloudshell/latest/userguide/working-with-aws-cloudshell.md)
+- [Accessibility features](https://docs.aws.amazon.com/cloudshell/latest/userguide/accessibility-feature-aws-cloudshell.md)
+- [Manage AWS services](https://docs.aws.amazon.com/cloudshell/latest/userguide/working-with-aws-cli.md)
+- [Kiro CLI in CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/q-cli-features-in-cloudshell.md)
+- [Running a command in CloudShell from AWS Service consoles](https://docs.aws.amazon.com/cloudshell/latest/userguide/cloudshell-commands.md)
+- [Customizing AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/customizing-cshell.md)
+- [Troubleshooting](https://docs.aws.amazon.com/cloudshell/latest/userguide/troubleshooting.md)
+- [Supported Regions](https://docs.aws.amazon.com/cloudshell/latest/userguide/supported-aws-regions.md)
+- [Service quotas and restrictions](https://docs.aws.amazon.com/cloudshell/latest/userguide/limits.md)
+- [Document history](https://docs.aws.amazon.com/cloudshell/latest/userguide/history.md)
+
+## [Tutorials](https://docs.aws.amazon.com/cloudshell/latest/userguide/tutorials.md)
+
+- [Tutorial: Copying multiple files](https://docs.aws.amazon.com/cloudshell/latest/userguide/multiple-files-upload-download.md): Demonstrates how to copy multiple files to and from AWS CloudShell using Amazon S3 or ZIP.
+- [Tutorial: Creating presigned URLs](https://docs.aws.amazon.com/cloudshell/latest/userguide/tutorial-presigned-url.md): Demonstrates how to access AWS CloudShell from the AWS Management Console and start working with the shell experience.
+- [Tutorial: Building a Docker container inside CloudShell and pushing to Amazon ECR](https://docs.aws.amazon.com/cloudshell/latest/userguide/tutorial-docker-cli.md): Demonstrates how to build a Docker container inside AWS CloudShell and push it to an Amazon ECR repository.
+- [Tutorial: Deploying a Lambda function using the AWS CDK](https://docs.aws.amazon.com/cloudshell/latest/userguide/tutorial-docker-cdk-deploy.md): Learn how to deploy a Lambda function by using the AWS CDK.
+
+
+## [Using AWS CloudShell in Amazon Virtual Private Cloud (Amazon VPC)](https://docs.aws.amazon.com/cloudshell/latest/userguide/using-cshell-in-vpc.md)
+
+- [Creating a CloudShell VPC environment](https://docs.aws.amazon.com/cloudshell/latest/userguide/creating-vpc-environment.md): Provides guidance on creating a AWS CloudShell VPC Environment
+- [Required IAM permissions for creating and using CloudShell VPC environments](https://docs.aws.amazon.com/cloudshell/latest/userguide/aws-cloudshell-vpc-permissions-1.md): Learn how to create and use CloudShell VPC environments with the required IAM permissions.
+
+
+## [Security](https://docs.aws.amazon.com/cloudshell/latest/userguide/security.md)
+
+### [Data protection](https://docs.aws.amazon.com/cloudshell/latest/userguide/data-protection.md)
+
+Learn how the AWS shared responsibility model applies to data protection in AWS CloudShell.
+
+- [Data encryption](https://docs.aws.amazon.com/cloudshell/latest/userguide/data-encryption.md): Learn about protecting your data from unauthorized access by encrypting data while stored and in transit.
+
+### [Identity and Access Management](https://docs.aws.amazon.com/cloudshell/latest/userguide/security-iam.md)
+
+How to authenticate requests and manage access to your CloudShell resources.
+
+- [How AWS CloudShell works with IAM](https://docs.aws.amazon.com/cloudshell/latest/userguide/security_iam_service-with-iam.md): Learn how to use IAM to manage access to CloudShell.
+- [Identity-based policy examples](https://docs.aws.amazon.com/cloudshell/latest/userguide/security_iam_id-based-policy-examples.md): Learn about Identity-based policy examples for AWS CloudShell.
+- [Troubleshooting](https://docs.aws.amazon.com/cloudshell/latest/userguide/security_iam_troubleshoot.md): Learn how to diagnose and fix common issues that you might encounter when working with CloudShell and IAM.
+- [Managing AWS CloudShell access and usage with IAM policies](https://docs.aws.amazon.com/cloudshell/latest/userguide/sec-auth-with-identities.md): Learn how to manage CloudShell access and usage IAM policies.
+- [Logging and monitoring](https://docs.aws.amazon.com/cloudshell/latest/userguide/logging-and-monitoring.md): Learn how you can log and monitor AWS CloudShell activity and performance.
+- [Compliance validation](https://docs.aws.amazon.com/cloudshell/latest/userguide/compliance-validation.md): Learn what AWS services are in scope of a specific compliance program.
+- [Resilience](https://docs.aws.amazon.com/cloudshell/latest/userguide/disaster-recovery-resiliency.md): Learn how AWS architecture supports data redundancy, and learn about specific AWS CloudShell features for data resiliency.
+- [Infrastructure security](https://docs.aws.amazon.com/cloudshell/latest/userguide/infrastructure-security.md): Learn how AWS CloudShell isolates service traffic.
+- [Security best practices](https://docs.aws.amazon.com/cloudshell/latest/userguide/security-best-practices.md): Learn some best practices for AWS CloudShell security.
+- [Security FAQs](https://docs.aws.amazon.com/cloudshell/latest/userguide/cloudshell-security-faqs.md): Answers to some of the most frequently asked questions about AWS CloudShell security.
+
+
+## [AWS CloudShell compute environment](https://docs.aws.amazon.com/cloudshell/latest/userguide/vm-specs.md)
+
+- [Migrating from Amazon Linux 2 to Amazon Linux 2023](https://docs.aws.amazon.com/cloudshell/latest/userguide/cloudshell-AL2023-migration.md): Learn about the CloudShell migration from Amazon Linux 2 to Amazon Linux 2023.

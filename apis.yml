@@ -14,7 +14,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/amazon-cloudshell/refs/heads/main/apis.yml
 created: '2026-03-16'
-modified: '2026-04-19'
+modified: '2026-06-20'
 specificationVersion: '0.19'
 apis:
 - name: Amazon CloudShell API
@@ -80,6 +80,20 @@ common:
   url: vocabulary/amazon-cloudshell-vocabulary.yaml
 - type: NaftikoCapability
   url: capabilities/shell-environment.yaml
+- type: LLMsTxt
+  url: llms/amazon-cloudshell-llms.txt
+- type: SecurityTxt
+  url: well-known/amazon-cloudshell-security.txt
+- type: WellKnown
+  url: well-known/amazon-cloudshell-well-known.yml
+- type: Packages
+  url: packages/amazon-cloudshell-packages.yml
+- type: MCPServer
+  url: mcp/amazon-cloudshell-mcp.yml
+- type: Conformance
+  url: conformance/amazon-cloudshell-conformance.yml
+- type: Lifecycle
+  url: lifecycle/amazon-cloudshell-lifecycle.yml
 - type: Features
   data:
   - name: Pre-Authenticated Access

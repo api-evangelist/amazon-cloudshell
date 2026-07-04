@@ -1,0 +1,31 @@
+generated: '2026-06-20'
+method: searched
+source: >-
+  apis.yml (StatusPage), docs.aws.amazon.com/cloudshell/latest/userguide/
+  (document history, limits, AL2->AL2023 migration) via
+  llms/amazon-cloudshell-llms.txt
+notes: >-
+  AWS CloudShell has no public, versioned REST API contract or published
+  deprecation-header policy. Lifecycle is governed by AWS-wide service practices
+  plus CloudShell-specific compute-environment and session limits.
+versioning:
+  scheme: none-public
+  current: null
+  docs: https://docs.aws.amazon.com/cloudshell/latest/userguide/history.md
+  note: No public API version or URI-path versioning is documented; the service is console-driven.
+deprecation:
+  policy_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/cloudshell-AL2023-migration.md
+  sunset_header: false
+  events:
+    - name: Compute environment migration from Amazon Linux 2 to Amazon Linux 2023
+      url: https://docs.aws.amazon.com/cloudshell/latest/userguide/cloudshell-AL2023-migration.md
+session_limits:
+  idle_suspend: "Environment suspends after a period of inactivity; kept alive via heartbeat."
+  persistent_storage: "1 GB per AWS Region."
+  quotas_docs: https://docs.aws.amazon.com/cloudshell/latest/userguide/limits.md
+sla:
+  url: https://aws.amazon.com/legal/service-level-agreements/
+  uptime_target: null
+  note: No CloudShell-specific published SLA located.
+status_page: https://health.aws.amazon.com/health/status
+deprecated_operations: []

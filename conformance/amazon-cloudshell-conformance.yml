@@ -1,0 +1,37 @@
+generated: '2026-06-20'
+method: derived
+source: >-
+  apis.yml (Compliance link, SigV4 endpoint host); user guide security/compliance
+  pages surfaced in llms/amazon-cloudshell-llms.txt
+notes: >-
+  AWS CloudShell is authenticated with AWS Signature Version 4 (SigV4) via IAM,
+  not OAuth2/OIDC. There is no public OpenAPI, so error-format and pagination
+  conformance cannot be derived from a spec. AWS-wide compliance program
+  attestations apply (see the compliance validation user-guide page).
+standards:
+  - id: aws-sigv4
+    conforms: true
+    evidence: Regional endpoint cloudshell.us-east-1.amazonaws.com is a SigV4/IAM-authenticated AWS API host (403 on unauthenticated probes).
+  - id: oauth2
+    conforms: false
+    evidence: Access is IAM/SigV4-based; no OAuth2 authorization server.
+  - id: oidc
+    conforms: false
+    evidence: No /.well-known/openid-configuration served by service or corporate hosts (404/403).
+  - id: rfc9116-security-txt
+    conforms: true
+    evidence: aws.amazon.com/.well-known/security.txt returns 200 (see well-known/amazon-cloudshell-security.txt).
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No OpenAPI or documented error contract; AWS uses its own JSON/XML error envelope, not application/problem+json.
+  - id: fhir-r4
+    conforms: false
+  - id: scim2
+    conforms: false
+  - id: odata
+    conforms: false
+  - id: json-api
+    conforms: false
+  - id: aws-compliance-programs
+    conforms: true
+    evidence: AWS compliance programs (SOC, ISO, PCI, FedRAMP, etc.) documented at https://aws.amazon.com/compliance/ and the CloudShell compliance-validation user-guide page.

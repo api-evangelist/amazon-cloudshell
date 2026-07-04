@@ -1,0 +1,30 @@
+generated: '2026-06-20'
+method: derived
+source: apis.yml CLI property; registry probes (npm, PyPI, NuGet, RubyGems, pkg.go.dev, Maven Central)
+notes: >-
+  AWS CloudShell ships NO dedicated first-party client library. Registry probes
+  for a service-specific SDK client all returned 404: npm @aws-sdk/client-cloudshell,
+  NuGet AWSSDK.CloudShell, RubyGems aws-sdk-cloudshell, pkg.go.dev
+  aws-sdk-go-v2/service/cloudshell, and Maven Central software.amazon.awssdk:cloudshell
+  (numFound 0). The published AWS CLI reference path for cloudshell also 404s.
+  The service is primarily driven from the AWS Management Console; a limited set
+  of operations (notably VPC-environment create/describe) is reachable through
+  the general AWS CLI. The packages below are AWS's general-purpose first-party
+  tooling that can reach CloudShell, not CloudShell-specific distributions.
+packages:
+  - language: python
+    registry: pypi
+    name: awscli
+    url: https://pypi.org/project/awscli/
+    install: pip install awscli
+    official: true
+    scope: general
+    note: General AWS CLI; exposes limited `aws cloudshell` VPC-environment operations. No dedicated cloudshell command reference page is currently published.
+  - language: python
+    registry: pypi
+    name: boto3
+    url: https://pypi.org/project/boto3/
+    install: pip install boto3
+    official: true
+    scope: general
+    note: General AWS SDK for Python. Does not bundle a dedicated cloudshell service client; CloudShell operations require a custom service model.
