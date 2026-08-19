@@ -1,33 +1,36 @@
 generated: '2026-06-20'
 method: derived
 status: candidate
-source: >-
-  Search of awslabs/mcp (https://github.com/awslabs/mcp) and awslabs.github.io/mcp
-  found no dedicated AWS CloudShell MCP server. Candidate tools derived from the
-  small set of CloudShell operations that are publicly documented (VPC-environment
-  lifecycle) plus general shell-execution semantics described in the user guide.
-notes: >-
-  No official hosted or remote MCP server exists for AWS CloudShell specifically.
-  AWS publishes general-purpose servers (AWS Documentation MCP Server, AWS Cloud
-  Control API MCP Server) under awslabs/mcp that can indirectly manage AWS
-  resources, but none targets CloudShell environments directly. The CloudShell
-  control-plane API is largely undocumented and console-driven, so the tools
-  below are speculative candidates, not a published contract.
+source: Search of awslabs/mcp (https://github.com/awslabs/mcp) and awslabs.github.io/mcp found no dedicated
+  AWS CloudShell MCP server. Candidate tools derived from the small set of CloudShell operations that
+  are publicly documented (VPC-environment lifecycle) plus general shell-execution semantics described
+  in the user guide.
+notes: No official hosted or remote MCP server exists for AWS CloudShell specifically. AWS publishes general-purpose
+  servers (AWS Documentation MCP Server, AWS Cloud Control API MCP Server) under awslabs/mcp that can
+  indirectly manage AWS resources, but none targets CloudShell environments directly. The CloudShell control-plane
+  API is largely undocumented and console-driven, so the tools below are speculative candidates, not a
+  published contract.
 server:
   name: amazon-cloudshell
   transport: http
   url: null
 related_servers:
-  - name: AWS Documentation MCP Server
-    url: https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server
-    official: true
-  - name: AWS Cloud Control API MCP Server
-    url: https://awslabs.github.io/mcp/servers/ccapi-mcp-server
-    official: true
+- name: AWS Documentation MCP Server
+  url: https://awslabs.github.io/mcp/servers/aws-documentation-mcp-server
+  official: true
+- name: AWS Cloud Control API MCP Server
+  url: https://awslabs.github.io/mcp/servers/ccapi-mcp-server
+  official: true
 tools:
-  - name: create_vpc_environment
-    description: Create an AWS CloudShell environment attached to an Amazon VPC (VpcId, SubnetIds, SecurityGroupIds).
-    source: https://docs.aws.amazon.com/cloudshell/latest/userguide/creating-vpc-environment.md
-  - name: describe_environments
-    description: Describe existing CloudShell environments for the caller.
-    source: https://docs.aws.amazon.com/cloudshell/latest/userguide/using-cshell-in-vpc.md
+- name: create_vpc_environment
+  description: Create an AWS CloudShell environment attached to an Amazon VPC (VpcId, SubnetIds, SecurityGroupIds).
+  source: https://docs.aws.amazon.com/cloudshell/latest/userguide/creating-vpc-environment.md
+- name: describe_environments
+  description: Describe existing CloudShell environments for the caller.
+  source: https://docs.aws.amazon.com/cloudshell/latest/userguide/using-cshell-in-vpc.md
+deployment:
+  mode: none
+  verified: derived
+  tools: 2
+  checked: '2026-08-12'
+  source: catalog MCP census

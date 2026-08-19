@@ -36,7 +36,6 @@ operational:
 capability:
   workflows:
     - name: "Cloud Shell Environment Management"
-      file: capabilities/shell-environment.yaml
       toolCount: 4
       personas: [Cloud Administrator]
 

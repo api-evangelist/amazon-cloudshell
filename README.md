@@ -80,7 +80,6 @@ API for creating and managing CloudShell environments — browser-based terminal
 - [Website](https://aws.amazon.com/cloudshell/)
 - [SpectralRules](rules/amazon-cloudshell-spectral-rules.yml)
 - [Vocabulary](vocabulary/amazon-cloudshell-vocabulary.yaml)
-- [NaftikoCapability](capabilities/shell-environment.yaml)
 
 ## Features
 
@@ -119,18 +118,6 @@ API for creating and managing CloudShell environments — browser-based terminal
 ### JSON-LD
 
 - [Amazon CloudShell Context](json-ld/amazon-cloudshell-context.jsonld)
-
-## Capabilities
-
-### Shared Per-API Definitions
-
-- [Amazon CloudShell](capabilities/shared/cloudshell.yaml) — 4 operations
-
-### Workflow Capabilities
-
-| Workflow | APIs Combined | Tools | Persona |
-|----------|--------------|-------|---------|
-| [Cloud Shell Environment Management](capabilities/shell-environment.yaml) | Amazon CloudShell | 4 | Cloud Administrator |
 
 ## Vocabulary
 
