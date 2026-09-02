@@ -152,3 +152,5 @@ common:
     description: CloudShell inherits permissions from the signed-in IAM user or role.
   - name: Amazon S3
     description: Upload files to and download files from S3 using CloudShell.
+x-parent: aws
+x-relationship: product
