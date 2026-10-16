@@ -2,11 +2,11 @@
   "repo": "amazon-cloudshell",
   "feeds": [
     {
-      "source": "https://aws.amazon.com/premiumsupport/",
-      "feed_url": "https://aws.amazon.com/premiumsupport/",
+      "source": "https://aws.amazon.com/blogs/developer/",
+      "feed_url": "https://aws.amazon.com/blogs/developer/feed/",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "discovered"
     },
     {
       "source": "https://aws.amazon.com/blogs/developer/feed/",
@@ -14,9 +14,16 @@
       "title": "",
       "saved": 0,
       "method": "feed"
+    },
+    {
+      "source": "https://aws.amazon.com/premiumsupport/",
+      "feed_url": "https://aws.amazon.com/premiumsupport/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-10-03T12:30:02Z",
+  "fetched": "2026-10-10T13:15:00Z",
   "post_count": 38,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "path_blog",
