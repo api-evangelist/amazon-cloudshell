@@ -1,4 +1,4 @@
-# Amazon CloudShell (amazon-cloudshell)
+# Amazon CloudShell
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,91 +66,110 @@
 
 AWS CloudShell is a browser-based terminal that enables users to manage and explore AWS resources directly from the AWS Management Console. Pre-authenticated, pre-installed with AWS CLI and dev tools, with 1 GB of persistent storage per region.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/amazon-cloudshell/refs/heads/main/apis.yml)
+**Areas:** CloudShell · Terminal · CLI · Browser-Based
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Amazon CloudShell on APIs.io
 
-## Tags:
+Everything profiled for Amazon CloudShell is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/amazon-cloudshell/](https://apis.io/providers/amazon-cloudshell/)** — or go straight to one of the APIs or properties below.
 
- - AWS, CloudShell, Terminal, CLI, Browser-Based
+### APIs (1)
 
-## Timestamps
+- [Amazon CloudShell API](https://apis.io/apis/amazon-cloudshell/amazon-cloudshell-api/) — API for creating and managing CloudShell environments — browser-based terminal sessions for AWS resource management.
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Amazon CloudShell API
-API for creating and managing CloudShell environments — browser-based terminal sessions for AWS resource management.
+#### MCP servers (1)
 
-**Human URL:** [https://aws.amazon.com/cloudshell/](https://aws.amazon.com/cloudshell/)
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags:
+- [amazon-cloudshell](https://apis.io/servers/amazon-cloudshell/amazon-cloudshell/)
 
- - AWS, CloudShell, Terminal, Development
+#### Vocabulary (1)
 
-#### Properties
+The provider's domain terms, defined.
 
-- [Documentation](https://docs.aws.amazon.com/cloudshell/latest/userguide/)
+- [Amazon Cloudshell Vocabulary](https://apis.io/vocabularies/amazon-cloudshell/amazon-cloudshell-vocabulary/)
 
-- [APIReference](https://docs.aws.amazon.com/cloudshell/latest/userguide/)
+#### Governance rules (1)
 
-## Common Properties
+Spectral rulesets for the provider's contracts.
 
-- [Portal](https://aws.amazon.com/)
+- [Amazon CloudShell API Rules](https://apis.io/rules/amazon-cloudshell/amazon-cloudshell-spectral-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Amazon Cloudshell Domain Security](https://apis.io/security/amazon-cloudshell/amazon-cloudshell-domain-security/)
+- [Amazon Cloudshell Trust Center](https://apis.io/security/amazon-cloudshell/amazon-cloudshell-trust-center/)
+- [Amazon Cloudshell Vulnerability Disclosure](https://apis.io/security/amazon-cloudshell/amazon-cloudshell-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://aws.amazon.com/cloudshell/)
-- [SpectralRules](rules/amazon-cloudshell-spectral-rules.yml)
-- [Vocabulary](vocabulary/amazon-cloudshell-vocabulary.yaml)
+- [Documentation](https://docs.aws.amazon.com/cloudshell/latest/userguide/)
+- [Sign up](https://signin.aws.amazon.com/signup?request_type=register)
+- [Support](https://aws.amazon.com/premiumsupport/)
+- [Blog](https://aws.amazon.com/blogs/developer/)
+- [Compliance](https://aws.amazon.com/compliance/)
+- [Terms of service](https://aws.amazon.com/service-terms/)
+- [Privacy policy](https://aws.amazon.com/privacy/)
+- [GitHub](https://github.com/aws)
+- [Status](https://health.aws.amazon.com/health/status)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Pre-Authenticated Access | Sign in with AWS Console credentials — no additional authentication required. |
-| Pre-Installed Tools | Amazon Linux 2 environment with AWS CLI, SDKs, and development tools pre-installed. |
-| Persistent Storage | Up to 1 GB of persistent storage per AWS region for scripts and configurations. |
-| No Additional Cost | Running commands in CloudShell incurs no extra charges beyond standard AWS service fees. |
-| File Management | Upload and download files directly from the browser. |
+**Kin Score 34.5** — thin · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 28.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 40.5 |
+| Access clarity | 60.5 |
 
-| Name | Description |
-|------|-------------|
-| Quick CLI Access | Execute AWS CLI commands from any browser without local setup. |
-| Script Execution | Run existing scripts with integrated AWS CLI documentation and auto-completion. |
-| Security Operations | Reduce incident response times with seamless console-authenticated terminal access. |
-| Training and Demos | Provide consistent, pre-configured AWS environments for training and demonstrations. |
+**Agent readiness 0.0** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| AWS Management Console | Launch directly from any AWS Console page with existing credentials. |
-| AWS CLI | Pre-installed and pre-configured AWS CLI for all service access. |
-| AWS IAM | CloudShell inherits permissions from the signed-in IAM user or role. |
-| Amazon S3 | Upload files to and download files from S3 using CloudShell. |
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
 
-## Artifacts
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/amazon-cloudshell/](https://apis.io/providers/amazon-cloudshell/).
 
-### JSON Schema
+## How this profile is made
 
-- No schemas generated
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-### JSON-LD
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Amazon CloudShell: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-- [Amazon CloudShell Context](json-ld/amazon-cloudshell-context.jsonld)
+## Open an issue
 
-## Vocabulary
-
-- [Amazon CloudShell Vocabulary](vocabulary/amazon-cloudshell-vocabulary.yaml) — Unified taxonomy covering operations, workflows, and personas
-
-## Rules
-
-- [Amazon CloudShell Spectral Rules](rules/amazon-cloudshell-spectral-rules.yml) — 19 rules enforcing Amazon CloudShell API conventions
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/amazon-cloudshell/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
